@@ -1,0 +1,93 @@
+#roudmap {
+  width: 100%;
+  height: 100vh;
+  margin-top: -5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.bac-roud {
+  position: absolute;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  background-image: url("./r.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  display: flex;
+  transform: translateY(-66.5%);
+}
+.roud-card {
+  background-color: #14c072;
+  width: 26rem;
+  height: 30rem;
+  z-index: 2;
+  border-radius: 2rem;
+  transition: 0.5s;
+  overflow: hidden;
+  margin-top: 2%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  transition: 1s;
+}
+.roud-card:hover {
+  width: 27rem;
+}
+.img-roud-card {
+  width: 100%;
+}
+.roud-card h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.roud-card .btn-roud {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2rem;
+  opacity: 0.8;
+}
+#roudmap h1 {
+  position: absolute;
+  transform: translateY(-500%);
+  left: 45%;
+  font-size: 2.5rem;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .roud-card {
+    width: 90%;
+    height: 45rem;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  .roud-card:hover {
+    width: 81%;
+  }
+
+  #roudmap {
+    width: 100%;
+    display: block;
+    
+    
+  }
+  .bac-roud {
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+    background-size: 300%;
+    padding: 0;
+  }
+  #roudmap h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    position: absolute;
+    bottom: -850px;
+    left: 30%;
+  }
+}
